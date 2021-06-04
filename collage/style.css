@@ -1,0 +1,98 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff;
+}
+
+main {
+  padding: 5rem 0 10rem 0;
+}
+
+.heading {
+  color: #333;
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.snapstack {
+  display: block;
+  float: left;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  width: 30rem;
+}
+.snapstack:hover .snapstack__snap:not(:hover) {
+  opacity: .6s;
+  transition: all .2s ease;
+}
+
+.snap {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  height: 30rem;
+  overflow: hidden;
+  position: absolute;
+  transition: all .5s ease;
+  width: 28rem;
+}
+.snap--1 {
+  z-index: 10;
+  transform: rotate(-45deg);
+}
+.snap--2 {
+  transform: rotate(-20deg);
+  z-index: 20;
+}
+.snap:hover {
+  transform: rotate(0) scale(1.3);
+  transition: all .5s ease;
+  z-index: 100;
+}
+.snap:hover > .snap__caption {
+  z-index: 110;
+}
+.snap__frame {
+  border: 0;
+  height: 22rem;
+  left: 0;
+  margin: 1rem 1rem 7rem 1rem;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 26rem;
+}
+.snap__frame--lightcoral{
+  background-color: lightcoral;
+}
+.snap__frame--aqua{
+  background-color:aqua;
+}
+
+
+.snap__img {
+  border: none;
+  color: #fff;
+  display: block;
+  font-family: 'Walter Turncoat',sans-serif;
+  font-size: 1.6rem;
+  height: 100%;
+  outline: none;
+  position: absolute;
+  width: 100%;
+}
+.snap__caption {
+  bottom: 2rem;
+  color: #333;
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 2.7rem;
+  left: 50%;
+  overflow: hidden;
+  position: absolute;
+  transform: translateX(-50%);
+}

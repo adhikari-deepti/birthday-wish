@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+html {
+  height: 100%;
+  background-image: linear-gradient(to right, #00a6ff 50%, #eef1f5 100%);
+}
+
+.card {
+  background: white;
+  padding: 10px;
+  text-align: center;
+  font-family: Pacifico;
+  font-size: 22px;
+  width: 210px;
+  height: 300px;
+  border-radius: 8px;
+}
+.card img {
+  width: 100%;
+  height: 82.5%;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px grey;
+}
+
+.card-one {
+  position: absolute;
+  right: 30%;
+  top: 25%;
+}
+
+.card-two{
+  transform: perspective(350px) rotateY(-50deg);
+  position: absolute;
+  top: 12%;
+  left: 12%;
+  z-index: -1;
+}
+
+.card-three {
+  transform: perspective(350px) rotateY(50deg);
+  position: absolute;
+  top: 12%;
+  right: 12%;
+  z-index: -2;
+}
+
+.card-four {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+}

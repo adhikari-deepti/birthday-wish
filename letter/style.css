@@ -1,0 +1,172 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+#honeygrid {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+img.thumb {
+  object-fit: cover;
+  height: 25vh;
+  width: 25vh;
+  border-radius: 12.5vh;
+  position: absolute;
+  z-index: 1;
+  animation-name: colorize;
+  animation-duration: 150s;
+  animation-iteration-count: infinite;
+}
+img.thumb:hover {
+  border-style: solid;
+  cursor: zoom-in;
+  z-index: 2;
+}
+img.center {
+  left: calc(50vw - 12.5vh);
+}
+img.left {
+  left: calc(50vw - 12.5vh - 0.866 * 25vh);
+}
+img.right {
+  left: calc(50vw - 12.5vh + 0.866 * 25vh);
+}
+img.bottom {
+  bottom: 0;
+}
+img.bottom-25 {
+  bottom: 25vh;
+}
+img.bottom-50 {
+  bottom: 50vh;
+}
+img.bottom-12_5 {
+  bottom: 12.5vh;
+}
+img.bottom-37_5 {
+  bottom: 37.5vh;
+}
+img.bottom-62_5 {
+  bottom: 62.5vh;
+}
+@keyframes go-left {
+  0% {left: 0;}
+  100% {left: -1000%;}
+}
+#image-wheel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  animation-name: go-left;
+  animation-duration: 150s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+  filter: blur(4px);
+}
+#image-wheel > img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+#image2large {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+#image3large {
+  position: absolute;
+  top: 0;
+  left: 200%;
+}
+#image4large {
+  position: absolute;
+  top: 0;
+  left: 300%;
+}
+#image5large {
+  position: absolute;
+  top: 0;
+  left: 400%;
+}
+#image6large {
+  position: absolute;
+  top: 0;
+  left: 500%;
+}
+#image7large {
+  position: absolute;
+  top: 0;
+  left: 600%;
+}
+#image8large {
+  position: absolute;
+  top: 0;
+  left: 700%;
+}
+#image9large {
+  position: absolute;
+  top: 0;
+  left: 800%;
+}
+#image10large {
+  position: absolute;
+  top: 0;
+  left: 900%;
+}
+#image1largeAgain {
+  position: absolute;
+  top: 0;
+  left: 1000%;
+}
+#1.png {
+  animation-delay: -8s;
+}
+#2.png {
+  animation-delay: 8s;
+}
+#3.png {
+  animation-delay: 23s;
+}
+#10.png{
+  animation-delay: 38s;
+}
+#6.png {
+  animation-delay: 53s;
+}
+#7.png {
+  animation-delay: 68s;
+}
+#5.png{
+  animation-delay: 85s;
+}
+#8.png {
+  animation-delay: 98s;
+}
+#9.png{
+  animation-delay: 115s;
+}
+#4.png {
+  animation-delay: 128s;
+}
+#enlargedPhotoDiv {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 2;
+  cursor: zoom-out;
+}
+#enlargedPhoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

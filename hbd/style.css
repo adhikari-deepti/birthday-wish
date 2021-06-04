@@ -1,0 +1,306 @@
+* {
+  border-box: box-sizing;
+  border-radius: 8px;
+}
+
+body {
+  width: 100%;
+  background: #333;
+}
+
+header {
+  position: relative;
+  /*background: #222;*/
+  padding: 0;
+  margin: 60px auto;
+  width: 100vw;
+  height: 100vh;
+  /*overflow: hidden;*/
+  
+}
+
+.image {
+z-index: 99;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  box-shadow: 0 10px 5px -5px rgba(0,0,0,.5);
+  }
+
+img {
+  width: 200px;
+  height: 200px; 
+}
+
+
+#a {
+  top: -20px;
+  left: -6px;
+/*
+  -webkit-filter: grayscale(1) blur(3px);
+  filter: grayscale(1) blur(1px);
+*/
+  }
+
+#b {
+  top: 2px;
+  left: 200px;
+}
+
+#c {
+  top: 366px;
+  left: 500px;  
+}
+
+#d {
+  top: -5px;
+  left: 160px; 
+}
+
+#e {
+  top: -25px;
+  left: 360px;  
+  
+}
+
+#f {
+  top: 357px;
+  left: 330px; 
+}
+
+#g {
+  top: 367px;
+  left: 170px; 
+ 
+}
+
+#h {
+  top: 170px;
+  left: 780px; 
+  
+}
+
+#j {
+  top: -20px;
+  left: 700px;
+}
+
+#l {
+  top: 370px;
+  left: 860px;
+}
+
+#m {
+  top: 170px;
+  left: 215px;
+}
+
+#n {
+  top: 165px;
+  left: 55px;
+}
+
+#o {
+  top: 165px;
+  left: 400px; 
+}
+
+#r {
+  top: 170px;
+  left: 600px; 
+}
+
+#s {
+  top: 360px;
+  left: 690px; 
+}
+
+#t {
+  top: -15px;
+  left: 540px; 
+}
+
+
+
+
+#a:hover {
+  z-index: 5;
+  transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);   
+  transform: scale(1.2) rotate(-360deg);
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.5);
+}
+
+#b:hover {
+  z-index: 5;
+  transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);  
+  transform: scale(1.2) rotate(360deg);
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6);
+}
+
+#c:hover {
+  z-index: 5;
+  transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);  
+  transform: scale(1.2) rotate(-360deg); 
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6);
+}
+
+#d:hover {
+  z-index: 5;
+  transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);   
+  transform: scale(1.2) rotate(360deg);
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6);
+}
+
+#e:hover {
+  z-index: 5;
+  transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);   
+ transform: scale(1.2) rotate(-360deg);
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6);
+}
+
+#f:hover {
+  z-index: 5;
+  transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);   
+  transform: scale(1.2) rotate(360deg);
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6);
+}
+
+#g:hover {
+  z-index: 5;
+ transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);   
+  transform: scale(1.2) rotate(-360deg);
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6);
+}
+
+#h:hover {
+  z-index: 5;
+  transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);  
+  transform: scale(1.2) rotate(360deg); 
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6);
+}
+
+#i:hover {
+  z-index: 5;
+ transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);  
+  transform: scale(1.2) rotate(-360deg); 
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6);
+}
+
+#j:hover {
+  z-index: 5;
+  transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);   
+ transform: scale(1.2) rotate(360deg);
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6);
+}
+
+#k:hover {
+  z-index: 5;
+ transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);   
+ transform: scale(1.2) rotate(-360deg);
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6);
+}
+
+#l:hover {
+  z-index: 5;
+ transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);   
+  transform: scale(1.2) rotate(360deg);
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6);
+}
+
+#m:hover {
+  z-index: 5;
+ transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0); 
+  transform: scale(1.2) rotate(-360deg); 
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6); 
+}
+
+#n:hover {
+  z-index: 5;
+ transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);  
+  transform: scale(1.2) rotate(360deg); 
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6);
+}
+
+#o:hover {
+  z-index: 5;
+ transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);   
+  transform: scale(1.2) rotate(-360deg);
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6);
+}
+
+#p:hover {
+  z-index: 5;
+ transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);   
+  transform: scale(1.2) rotate(360deg);
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6);
+}
+
+#q:hover {
+  z-index: 5;
+ transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);  
+  transform: scale(1.25) rotate(360deg);
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6);
+}
+
+#r:hover {
+  z-index: 5;
+ transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);   
+  transform: scale(1.2) rotate(360deg);
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6);
+  
+}
+
+#s:hover {
+  z-index: 5;
+  transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);   
+  transform: scale(1.2) rotate(-360deg);
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6);
+  
+}
+
+#t:hover {
+  z-index: 5;
+  transition: -webkit-filter .7s ease-in, transform .3s ease-out;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);   
+  transform: scale(1.2) rotate(360deg);
+  box-shadow: 10px 10px 2px  rgba(0,0,0,.6);
+}

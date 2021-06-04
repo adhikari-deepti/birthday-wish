@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #1a1a1a;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  width: 100%;
+  color: salmon;
+    padding: 350px 200px 0px 300px;
+    font-size: 40px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.twitter {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.src {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  text-align: right;
+  text-transform: uppercase;
+}

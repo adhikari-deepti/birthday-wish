@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - DailyUI #014 | Countdown Timer</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="balloon white">
+    <div class="star-red"></div>
+  <div class="face">
+    <div class="eye"></div>
+    <div class="mouth happy"></div>
+  </div>
+  <div class="triangle"></div>
+  <div class="string"></div>
+</div>
+
+<div class="balloon red">
+  <div class="star"></div>
+  <div class="face">
+    <div class="eye"></div>
+    <div class="mouth happy"></div>
+  </div>
+  <div class="triangle"></div>
+  <div class="string"></div>
+</div>
+
+<div class="balloon blue">
+  <div class="star"></div>
+  <div class="face">
+    <div class="eye"></div>
+    <div class="mouth happy"></div>
+  </div>
+  <div class="triangle"></div>
+  <div class="string"></div>
+</div>
+  <div id="timer"></div>
+  <h1>1st of june </h1>
+</div>
+    <on_time>
+                            <a class="btn btn-common" href='hbd/index.html'>
+                                <h1>enter</h1>
+                            </a>
+                    </on_time>
+<footer>
+  <p>  <a href="https://codepen.io/juliepark">  </a> ♡
+</footer>
+<!-- partial -->
+  <script  src="./script.js"></script>
+    <script>
+                var a, b;
+
+        a = 06012020;
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = today.getFullYear();
+        console.log(mm);
+
+        today = mm + dd + yyyy;
+        b = parseInt(today, 10);
+        if (a <= b) {
+            $("on_time").show(1000);
+        } else {
+            $("on_time").hide();
+             setTimeout(function() {
+             location.reload();
+         }, 12000);
+        }
+    </script>
+
+</body>
+</html>

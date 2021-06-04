@@ -1,0 +1,117 @@
+:root {
+  --width: 21;
+  --wedge-point-l: 0;
+  --wedge-point-r: 0;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  background: #141422;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  left: calc(var(--width) * -0.5vw);
+  margin: auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-transform-origin: calc(50% + var(--width) * 0.5vw) 50%;
+          transform-origin: calc(50% + var(--width) * 0.5vw) 50%;
+  -webkit-animation: rotate-doge 235s linear 0s infinite;
+          animation: rotate-doge 235s linear 0s infinite;
+}
+
+.wedge {
+  --rot-angle: 0deg;
+  --scale: 1;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  margin: auto;
+  width: calc(var(--width) * 1vw);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  -webkit-transform: rotate(var(--rot-angle)) scale(var(--scale));
+          transform: rotate(var(--rot-angle)) scale(var(--scale));
+}
+.wedge,
+.wedge img, .wedge:before {
+  -webkit-clip-path: polygon(var(--wedge-point-l) 0, var(--wedge-point-r) 0, var(--wedge-point-r) 0, 50% 100%, var(--wedge-point-l) 0);
+          clip-path: polygon(var(--wedge-point-l) 0, var(--wedge-point-r) 0, var(--wedge-point-r) 0, 50% 100%, var(--wedge-point-l) 0);
+}
+.wedge img, .wedge:before {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+}
+.wedge img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  -webkit-transform: translate(0, -7vw);
+          transform: translate(0, -7vw);
+}
+.wedge:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background: #d47;
+  -webkit-transform: translate(0, -2vw);
+          transform: translate(0, -2vw);
+  z-index: -1;
+}
+.wedge--selected {
+  --scale: 1.4;
+}
+.wedge--selected,
+.wedge--selected img, .wedge--selected:before {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
+}
+.wedge--selected img {
+  -webkit-transform: translate(0, -0.83vw);
+          transform: translate(0, -0.83vw);
+}
+.wedge--selected:before {
+  -webkit-transform: translate(0, -0.22vw);
+          transform: translate(0, -0.22vw);
+}
+.wedge:hover img {
+  opacity: 0.8;
+}
+
+@-webkit-keyframes rotate-doge {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotate-doge {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}

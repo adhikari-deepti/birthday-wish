@@ -1,0 +1,100 @@
+html{
+  background: lightgray;
+  font-family: 'Lato', sans-serif;
+}
+
+.NMS-Bienvenida-Collage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.NMS-Bienvenida-Collage h2{
+    color: #dedede;
+}
+
+.NMS-Bienvenida-Collage a{
+    text-decoration: none;
+}
+
+.NMS-Bienvenida-Collage img{
+    height: auto;
+    max-width: 100%;
+}
+
+.NMS-Bienvenida-Collage .bloques{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,.1);
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.NMS-Bienvenida-Collage #bloque1:hover,
+.NMS-Bienvenida-Collage #bloque2:hover,
+.NMS-Bienvenida-Collage #bloque3:hover,
+.NMS-Bienvenida-Collage #bloque4:hover{
+    background: #fced76;
+    transform: rotate(0deg);
+    z-index: 3;
+}
+
+.NMS-Bienvenida-Collage #bloque1{
+    height: 350px;
+    margin-left: 40px;
+    transform: rotate(-5deg);
+    width: 300px;
+}
+
+.NMS-Bienvenida-Collage #bloque2{
+    height: 450px;
+    margin-left: -80px;
+    transform: rotate(10deg);
+    width: 350px;
+    z-index: 2;
+}
+
+.NMS-Bienvenida-Collage #bloque3{
+    height: 400px;
+    margin-left: -20px;
+    margin-right: 40px;
+    transform: rotate(-5deg);
+    width: 300px;
+}
+
+.NMS-Bienvenida-Collage #bloque4{
+    height: 200px;
+    margin-top: -50px;
+    transform: rotate(-7deg);
+    width: 400px;
+}
+
+.NMS-Bienvenida-Collage #bloque1 p::before, 
+.NMS-Bienvenida-Collage #bloque2 p::before,
+.NMS-Bienvenida-Collage #bloque3 p::before,
+.NMS-Bienvenida-Collage #bloque4 p::before{
+    background-color: #dedede;
+    content: "";
+    display: block;
+    height: 6px;
+    margin-top: 35px;
+    order: 1;
+    -webkit-order: 1;
+}
+
+
+.NMS-Bienvenida-Collage #bloque1 p::after, 
+.NMS-Bienvenida-Collage #bloque2 p::after,
+.NMS-Bienvenida-Collage #bloque3 p::after,
+.NMS-Bienvenida-Collage #bloque4 p::after{
+    background-color: #dedede;
+    content: "";
+    display: block;
+    height: 6px;
+    margin-top: 18px;
+    order: 2;
+    -webkit-order: 2;
+    width: 80%;
+}
